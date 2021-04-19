@@ -413,7 +413,7 @@ header, .mainh {
     }
     #MFooter_Main_Bottom_id{
         margin-top: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
     #Header_Bottom_Info, #bottomimg_id{
         display: flex;
@@ -502,7 +502,7 @@ header, .mainh {
     #Movies_Inf_Main_IMG_Top {
         position: relative;
         margin-bottom: 50%;
-    } 
+    }
 }
 
 @media (max-width:300px){

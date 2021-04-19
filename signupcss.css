@@ -320,4 +320,13 @@
     .Form_List li span{
         margin: 0;
     }
+    .MFooter{
+        height: 230px;
+    }
+}
+
+@media(max-width:400px){
+    .MFooter{
+        height: 250px;
+    }
 }
