@@ -112,7 +112,7 @@ header, .mainh {
 .mainimg {
     height: 650px;
     background:url(src/junglebook.jpeg);
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
