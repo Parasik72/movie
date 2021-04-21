@@ -1006,6 +1006,14 @@ body main, body footer{
     margin-right: 10px;
 }
 
+#MFooter_Main_Top_About_etc_id, #MFooter_Main_Top_Pictures_id{
+    list-style: none;
+}
+
+#MFooter_Main_Top_About_etc_id li, #MFooter_Main_Top_Pictures_id li{
+    display: inline-block;
+}
+
 .MFooter_Main_Top_IMG {
     height: 20px;
 }
