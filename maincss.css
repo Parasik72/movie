@@ -449,7 +449,7 @@ header, .mainh {
         top: 0;
     }
     .header_burger::after{
-        bottom: 1px;
+        bottom: 0;
     }
     .header_burger span{
         position: absolute;
