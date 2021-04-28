@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="viewport" content="width=device-width">
     <title>Main</title>
     <link rel="stylesheet" href="maincss.css">
     <script src="https://kit.fontawesome.com/ca0d22efad.js" crossorigin="anonymous"></script>
@@ -14,13 +14,13 @@
         <section class="mainh">
             <div class="topimg">
                 <div id="topimg_id" class="container">
-                    <span class="Movie">MOVIE</span>
+                    <h6 class="Movie">MOVIE</h6>
                     <div onclick="clickBurger()" id="header_burger_id" class="header_burger">
                         <span></span>
                     </div>
                     <nav id="navigation_topimg_id" class="navigation_topimg">
                         <ul id="navigation_topimg_ul_id">
-                            <li id="Lypa"><img id="search_head" src="src/Search_Icon.png" onclick="searchField()"></li>
+                            <li id="Lypa"><img id="search_head" src="src/Search_Icon.png" alt="" onclick="searchField()"></li>
                             <li class="SignIn"><a href="#">Sign in</a></li>
                             <li class="SignUp"><a href="signup.html">Sign Up</a></li>
                         </ul>
@@ -58,11 +58,11 @@
                     <div id="Movie_info_bottom_id" class="Movie_info_bottom">
                         <div class="Movie_info_Star">
                             <ul>
-                                <li><img src="src/Star.png" class="img_star"></li>
-                                <li><img src="src/Star.png" class="img_star"></li>
-                                <li><img src="src/Star.png" class="img_star"></li>
-                                <li><img src="src/Star.png" class="img_star"></li>
-                                <li><img src="src/Star.png" class="img_star"></li>
+                                <li><img src="src/Star.png" alt="" class="img_star"></li>
+                                <li><img src="src/Star.png" alt="" class="img_star"></li>
+                                <li><img src="src/Star.png" alt="" class="img_star"></li>
+                                <li><img src="src/Star.png" alt="" class="img_star"></li>
+                                <li><img src="src/Star.png" alt="" class="img_star"></li>
                                 <li>4.8</li>
                             </ul>
                         </div>
@@ -88,7 +88,7 @@
         </section>
     </header>
     <main>
-        <article class="Movies">
+        <div class="Movies">
             <div class="container">
                 <div class="Movies_Main">
                     <nav id="Movies_Nav_id" class="Movies_Nav">
@@ -146,33 +146,35 @@
                             </ul>
                         </div>
                     </nav>
-                    <div>
-                        <div id="Movies_M_ID" class="Movies_M">
+                    <div id="Movies_M_ID">
+                        <div class="Movies_M">
                             <section class="Movies_Selection">
                                 <div class="Movies_Selection_Top">
                                     <div>
                                         <div class="Movies_Selection_Top_Flex">
                                             <ul>
-                                                <a href="#">
-                                                    <div class="Movies_Selection_Top_C">
-                                                        <div class="Movies_Selection_Top_Circle">
-                                                            <div class="Movies_Selection_Top_Triangle">
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="Movies_Selection_Top_C">
+                                                            <div class="Movies_Selection_Top_Circle">
+                                                                <div class="Movies_Selection_Top_Triangle">
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                </a>
-                                                <li>Watch Now</li>
-                                                <a href="#" class="Movies_Selection_Top_Flex_ViewInfo"><li>View Info</li></a>
+                                                    </a>
+                                                </li>
+                                                <li><h4>Watch Now</h4></li>
+                                                <li><a href="#" class="Movies_Selection_Top_Flex_ViewInfo"><span>View Info</span></a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div> 
-                                <img src="src/fantastic_beasts_and.png" class="Movies_Main_IMG">
+                                <img src="src/fantastic_beasts_and.png" alt="" class="Movies_Main_IMG">
                                 <div class="Movies_Selection_Bottom">
                                     <div>
                                         <ul class="Movies_Selection_Bottom_Title">
                                             <li><span>Fantastic Beasts...</span></li>
-                                            <li id="Movies_Rating">
+                                            <li class="Movies_Rating">
                                                 <span>4.7</span>
                                             </li>
                                         </ul>
@@ -189,26 +191,28 @@
                                     <div>
                                         <div class="Movies_Selection_Top_Flex">
                                             <ul>
-                                                <a href="#">
-                                                    <div class="Movies_Selection_Top_C">
-                                                        <div class="Movies_Selection_Top_Circle">
-                                                            <div class="Movies_Selection_Top_Triangle">
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="Movies_Selection_Top_C">
+                                                            <div class="Movies_Selection_Top_Circle">
+                                                                <div class="Movies_Selection_Top_Triangle">
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                </a>
-                                                <li>Watch Now</li>
-                                                <a href="#" class="Movies_Selection_Top_Flex_ViewInfo"><li>View Info</li></a>
+                                                    </a>
+                                                </li>
+                                                <li><h4>Watch Now</h4></li>
+                                                <li><a href="#" class="Movies_Selection_Top_Flex_ViewInfo"><span>View Info</span></a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div> 
-                                <img src="src/creed.png" class="Movies_Main_IMG">
+                                <img src="src/creed.png" alt="" class="Movies_Main_IMG">
                                 <div class="Movies_Selection_Bottom">
                                     <div>
                                         <ul class="Movies_Selection_Bottom_Title">
                                             <li><span>Assassin’s Creed</span></li>
-                                            <li id="Movies_Rating">
+                                            <li class="Movies_Rating">
                                                 <span>4.2</span>
                                             </li>
                                         </ul>
@@ -225,26 +229,28 @@
                                     <div>
                                         <div class="Movies_Selection_Top_Flex">
                                             <ul>
-                                                <a href="#">
-                                                    <div class="Movies_Selection_Top_C">
-                                                        <div class="Movies_Selection_Top_Circle">
-                                                            <div class="Movies_Selection_Top_Triangle">
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="Movies_Selection_Top_C">
+                                                            <div class="Movies_Selection_Top_Circle">
+                                                                <div class="Movies_Selection_Top_Triangle">
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                </a>
-                                                <li>Watch Now</li>
-                                                <a href="#" class="Movies_Selection_Top_Flex_ViewInfo"><li>View Info</li></a>
+                                                    </a>
+                                                </li>
+                                                <li><h4>Watch Now</h4></li>
+                                                <li><a href="#" class="Movies_Selection_Top_Flex_ViewInfo"><span>View Info</span></a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div> 
-                                <img src="src/nysm.png" class="Movies_Main_IMG">
+                                <img src="src/nysm.png" alt="" class="Movies_Main_IMG">
                                 <div class="Movies_Selection_Bottom">
                                     <div>
                                         <ul class="Movies_Selection_Bottom_Title">
                                             <li><span>Now you see me 2</span></li>
-                                            <li id="Movies_Rating">
+                                            <li class="Movies_Rating">
                                                 <span>4.4</span>
                                             </li>
                                         </ul>
@@ -261,26 +267,28 @@
                                     <div>
                                         <div class="Movies_Selection_Top_Flex">
                                             <ul>
-                                                <a href="#">
-                                                    <div class="Movies_Selection_Top_C">
-                                                        <div class="Movies_Selection_Top_Circle">
-                                                            <div class="Movies_Selection_Top_Triangle">
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="Movies_Selection_Top_C">
+                                                            <div class="Movies_Selection_Top_Circle">
+                                                                <div class="Movies_Selection_Top_Triangle">
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                </a>
-                                                <li>Watch Now</li>
-                                                <a href="#" class="Movies_Selection_Top_Flex_ViewInfo"><li>View Info</li></a>
+                                                    </a>
+                                                </li>
+                                                <li><h4>Watch Now</h4></li>
+                                                <li><a href="#" class="Movies_Selection_Top_Flex_ViewInfo"><span>View Info</span></a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div> 
-                                <img src="src/tarzan.png" class="Movies_Main_IMG">
+                                <img src="src/tarzan.png" alt="" class="Movies_Main_IMG">
                                 <div class="Movies_Selection_Bottom">
                                     <div>
                                         <ul class="Movies_Selection_Bottom_Title">
                                             <li><span>The Legend of Ta...</span></li>
-                                            <li id="Movies_Rating">
+                                            <li class="Movies_Rating">
                                                 <span>4.3</span>
                                             </li>
                                         </ul>
@@ -293,32 +301,34 @@
                                 </div>
                             </section>
                         </div>
-                        <div id="Movies_M_ID" class="Movies_M">
+                        <div class="Movies_M">
                             <section class="Movies_Selection">
                                 <div class="Movies_Selection_Top">
                                     <div>
                                         <div class="Movies_Selection_Top_Flex">
                                             <ul>
-                                                <a href="#">
-                                                    <div class="Movies_Selection_Top_C">
-                                                        <div class="Movies_Selection_Top_Circle">
-                                                            <div class="Movies_Selection_Top_Triangle">
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="Movies_Selection_Top_C">
+                                                            <div class="Movies_Selection_Top_Circle">
+                                                                <div class="Movies_Selection_Top_Triangle">
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                </a>
-                                                <li>Watch Now</li>
-                                                <a href="#" class="Movies_Selection_Top_Flex_ViewInfo"><li>View Info</li></a>
+                                                    </a>
+                                                </li>
+                                                <li><h4>Watch Now</h4></li>
+                                                <li><a href="#" class="Movies_Selection_Top_Flex_ViewInfo"><span>View Info</span></a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div> 
-                                <img src="src/doctor.png" class="Movies_Main_IMG">
+                                <img src="src/doctor.png" alt="" class="Movies_Main_IMG">
                                 <div class="Movies_Selection_Bottom">
                                     <div>
                                         <ul class="Movies_Selection_Bottom_Title">
                                             <li><span>Doctor Strange</span></li>
-                                            <li id="Movies_Rating">
+                                            <li class="Movies_Rating">
                                                 <span>4.8</span>
                                             </li>
                                         </ul>
@@ -335,26 +345,28 @@
                                     <div>
                                         <div class="Movies_Selection_Top_Flex">
                                             <ul>
-                                                <a href="#">
-                                                    <div class="Movies_Selection_Top_C">
-                                                        <div class="Movies_Selection_Top_Circle">
-                                                            <div class="Movies_Selection_Top_Triangle">
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="Movies_Selection_Top_C">
+                                                            <div class="Movies_Selection_Top_Circle">
+                                                                <div class="Movies_Selection_Top_Triangle">
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                </a>
-                                                <li>Watch Now</li>
-                                                <a href="#" class="Movies_Selection_Top_Flex_ViewInfo"><li>View Info</li></a>
+                                                    </a>
+                                                </li>
+                                                <li><h4>Watch Now</h4></li>
+                                                <li><a href="#" class="Movies_Selection_Top_Flex_ViewInfo"><span>View Info</span></a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div> 
-                                <img src="src/captain_america.png" class="Movies_Main_IMG">
+                                <img src="src/captain_america.png" alt="" class="Movies_Main_IMG">
                                 <div class="Movies_Selection_Bottom">
                                     <div>
                                         <ul class="Movies_Selection_Bottom_Title">
                                             <li><span>Captain America...</span></li>
-                                            <li id="Movies_Rating">
+                                            <li class="Movies_Rating">
                                                 <span>4.9</span>
                                             </li>
                                         </ul>
@@ -371,26 +383,28 @@
                                     <div>
                                         <div class="Movies_Selection_Top_Flex">
                                             <ul>
-                                                <a href="#">
-                                                    <div class="Movies_Selection_Top_C">
-                                                        <div class="Movies_Selection_Top_Circle">
-                                                            <div class="Movies_Selection_Top_Triangle">
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="Movies_Selection_Top_C">
+                                                            <div class="Movies_Selection_Top_Circle">
+                                                                <div class="Movies_Selection_Top_Triangle">
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                </a>
-                                                <li>Watch Now</li>
-                                                <a href="#" class="Movies_Selection_Top_Flex_ViewInfo"><li>View Info</li></a>
+                                                    </a>
+                                                </li>
+                                                <li><h4>Watch Now</h4></li>
+                                                <li><a href="#" class="Movies_Selection_Top_Flex_ViewInfo"><span>View Info</span></a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div> 
-                                <img src="src/alice_through.png" class="Movies_Main_IMG">
+                                <img src="src/alice_through.png" alt="" class="Movies_Main_IMG">
                                 <div class="Movies_Selection_Bottom">
                                     <div>
                                         <ul class="Movies_Selection_Bottom_Title">
                                             <li><span>Alice Through th...</span></li>
-                                            <li id="Movies_Rating">
+                                            <li class="Movies_Rating">
                                                 <span>4.7</span>
                                             </li>
                                         </ul>
@@ -407,26 +421,28 @@
                                     <div>
                                         <div class="Movies_Selection_Top_Flex">
                                             <ul>
-                                                <a href="#">
-                                                    <div class="Movies_Selection_Top_C">
-                                                        <div class="Movies_Selection_Top_Circle">
-                                                            <div class="Movies_Selection_Top_Triangle">
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="Movies_Selection_Top_C">
+                                                            <div class="Movies_Selection_Top_Circle">
+                                                                <div class="Movies_Selection_Top_Triangle">
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                </a>
-                                                <li>Watch Now</li>
-                                                <a href="#" class="Movies_Selection_Top_Flex_ViewInfo"><li>View Info</li></a>
+                                                    </a>
+                                                </li>
+                                                <li><h4>Watch Now</h4></li>
+                                                <li><a href="#" class="Movies_Selection_Top_Flex_ViewInfo"><span>View Info</span></a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div> 
-                                <img src="src/dory.png" class="Movies_Main_IMG">
+                                <img src="src/dory.png" alt="" class="Movies_Main_IMG">
                                 <div class="Movies_Selection_Bottom">
                                     <div>
                                         <ul class="Movies_Selection_Bottom_Title">
                                             <li><span>Finding Dory</span></li>
-                                            <li id="Movies_Rating">
+                                            <li class="Movies_Rating">
                                                 <span>4.7</span>
                                             </li>
                                         </ul>
@@ -439,32 +455,34 @@
                                 </div>
                             </section>
                         </div>
-                        <div id="Movies_M_ID" class="Movies_M">
+                        <div class="Movies_M">
                             <section class="Movies_Selection">
                                 <div class="Movies_Selection_Top">
                                     <div>
                                         <div class="Movies_Selection_Top_Flex">
                                             <ul>
-                                                <a href="#">
-                                                    <div class="Movies_Selection_Top_C">
-                                                        <div class="Movies_Selection_Top_Circle">
-                                                            <div class="Movies_Selection_Top_Triangle">
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="Movies_Selection_Top_C">
+                                                            <div class="Movies_Selection_Top_Circle">
+                                                                <div class="Movies_Selection_Top_Triangle">
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                </a>
-                                                <li>Watch Now</li>
-                                                <a href="#" class="Movies_Selection_Top_Flex_ViewInfo"><li>View Info</li></a>
+                                                    </a>
+                                                </li>
+                                                <li><h4>Watch Now</h4></li>
+                                                <li><a href="#" class="Movies_Selection_Top_Flex_ViewInfo"><span>View Info</span></a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div> 
-                                <img src="src/the_bfg.png" class="Movies_Main_IMG">
+                                <img src="src/the_bfg.png" alt="" class="Movies_Main_IMG">
                                 <div class="Movies_Selection_Bottom">
                                     <div>
                                         <ul class="Movies_Selection_Bottom_Title">
                                             <li><span>The BFG</span></li>
-                                            <li id="Movies_Rating">
+                                            <li class="Movies_Rating">
                                                 <span>3.2</span>
                                             </li>
                                         </ul>
@@ -481,26 +499,28 @@
                                     <div>
                                         <div class="Movies_Selection_Top_Flex">
                                             <ul>
-                                                <a href="#">
-                                                    <div class="Movies_Selection_Top_C">
-                                                        <div class="Movies_Selection_Top_Circle">
-                                                            <div class="Movies_Selection_Top_Triangle">
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="Movies_Selection_Top_C">
+                                                            <div class="Movies_Selection_Top_Circle">
+                                                                <div class="Movies_Selection_Top_Triangle">
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                </a>
-                                                <li>Watch Now</li>
-                                                <a href="#" class="Movies_Selection_Top_Flex_ViewInfo"><li>View Info</li></a>
+                                                    </a>
+                                                </li>
+                                                <li><h4>Watch Now</h4></li>
+                                                <li><a href="#" class="Movies_Selection_Top_Flex_ViewInfo"><span>View Info</span></a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div> 
-                                <img src="src/independence.png" class="Movies_Main_IMG">
+                                <img src="src/independence.png" alt="" class="Movies_Main_IMG">
                                 <div class="Movies_Selection_Bottom">
                                     <div>
                                         <ul class="Movies_Selection_Bottom_Title">
                                             <li><span>Independence Day</span></li>
-                                            <li id="Movies_Rating">
+                                            <li class="Movies_Rating">
                                                 <span>3.9</span>
                                             </li>
                                         </ul>
@@ -516,26 +536,28 @@
                                     <div>
                                         <div class="Movies_Selection_Top_Flex">
                                             <ul>
-                                                <a href="#">
-                                                    <div class="Movies_Selection_Top_C">
-                                                        <div class="Movies_Selection_Top_Circle">
-                                                            <div class="Movies_Selection_Top_Triangle">
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="Movies_Selection_Top_C">
+                                                            <div class="Movies_Selection_Top_Circle">
+                                                                <div class="Movies_Selection_Top_Triangle">
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                </a>
-                                                <li>Watch Now</li>
-                                                <a href="#" class="Movies_Selection_Top_Flex_ViewInfo"><li>View Info</li></a>
+                                                    </a>
+                                                </li>
+                                                <li><h4>Watch Now</h4></li>
+                                                <li><a href="#" class="Movies_Selection_Top_Flex_ViewInfo"><span>View Info</span></a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div> 
-                                <img src="src/ice_age.png" class="Movies_Main_IMG">
+                                <img src="src/ice_age.png" alt="" class="Movies_Main_IMG">
                                 <div class="Movies_Selection_Bottom">
                                     <div>
                                         <ul class="Movies_Selection_Bottom_Title">
                                             <li><span>Ice Age: Collisio...</span></li>
-                                            <li id="Movies_Rating">
+                                            <li class="Movies_Rating">
                                                 <span>4.5</span>
                                             </li>
                                         </ul>
@@ -551,26 +573,28 @@
                                     <div>
                                         <div class="Movies_Selection_Top_Flex">
                                             <ul>
-                                                <a href="#">
-                                                    <div class="Movies_Selection_Top_C">
-                                                        <div class="Movies_Selection_Top_Circle">
-                                                            <div class="Movies_Selection_Top_Triangle">
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="Movies_Selection_Top_C">
+                                                            <div class="Movies_Selection_Top_Circle">
+                                                                <div class="Movies_Selection_Top_Triangle">
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                </a>
-                                                <li>Watch Now</li>
-                                                <a href="#" class="Movies_Selection_Top_Flex_ViewInfo"><li>View Info</li></a>
+                                                    </a>
+                                                </li>
+                                                <li><h4>Watch Now</h4></li>
+                                                <li><a href="#" class="Movies_Selection_Top_Flex_ViewInfo"><span>View Info</span></a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div> 
-                                <img src="src/moana.png" class="Movies_Main_IMG">
+                                <img src="src/moana.png" alt="" class="Movies_Main_IMG">
                                 <div class="Movies_Selection_Bottom">
                                     <div>
                                         <ul class="Movies_Selection_Bottom_Title">
                                             <li><span>Moana</span></li>
-                                            <li id="Movies_Rating">
+                                            <li class="Movies_Rating">
                                                 <span>4.9</span>
                                             </li>
                                         </ul>
@@ -585,7 +609,7 @@
                     </div>
                     <div class="Movies_Inf">
                         <section class="Movies_Inf_Main">
-                            <img src="src/Footer_bg_copy.png" class="Movies_Inf_Main_IMG Movies_Inf_Main_IMG_M">
+                            <img src="src/Footer_bg_copy.png" alt="" class="Movies_Inf_Main_IMG Movies_Inf_Main_IMG_M">
                             <div class="Movies_Inf_Main_IMG Movies_Inf_Main_IMG_B">
                                 <div id="Movies_Inf_Main_IMG_Top_FLEX">
                                     <div id="Movies_Inf_Main_IMG_Top">   
@@ -593,198 +617,208 @@
                                             <span>Receive information on the latest hit movies straight to your inbox.</span>
                                         </div>
                                         <div class="Movies_Inf_Main_Subscribe">
-                                            <a id="Button_Subscribe" href="#">Subscribe!</a>
+                                            <a id="Button_Subscribe" href="#"><h4>Subscribe!</h4></a>
                                         </div>
                                     </div>
-                                <div>
-                            </div>
-                        </section>
-                    </div>
-                    <div id="Movies_M_ID" class="Movies_M">
-                        <section class="Movies_Selection">
-                            <div class="Movies_Selection_Top">
-                                <div>
-                                    <div class="Movies_Selection_Top_Flex">
-                                        <ul>
-                                            <a href="#">
-                                                <div class="Movies_Selection_Top_C">
-                                                    <div class="Movies_Selection_Top_Circle">
-                                                        <div class="Movies_Selection_Top_Triangle">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <li>Watch Now</li>
-                                            <a href="#" class="Movies_Selection_Top_Flex_ViewInfo"><li>View Info</li></a>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div> 
-                            <img src="src/captain_america.png" class="Movies_Main_IMG">
-                            <div class="Movies_Selection_Bottom">
-                                <div>
-                                    <ul class="Movies_Selection_Bottom_Title">
-                                        <li><span>Captain America...</span></li>
-                                        <li id="Movies_Rating">
-                                            <span>4.9</span>
-                                        </li>
-                                    </ul>
-                                    <ul>
-                                        <li><span>Action,&nbsp;</span></li>
-                                        <li><span>Adventure,&nbsp;</span></li>
-                                        <li><span>Sci-fi</span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="Movies_Selection">
-                            <div class="Movies_Selection_Top">
-                                <div>
-                                    <div class="Movies_Selection_Top_Flex">
-                                        <ul>
-                                            <a href="#">
-                                                <div class="Movies_Selection_Top_C">
-                                                    <div class="Movies_Selection_Top_Circle">
-                                                        <div class="Movies_Selection_Top_Triangle">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <li>Watch Now</li>
-                                            <a href="#" class="Movies_Selection_Top_Flex_ViewInfo"><li>View Info</li></a>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div> 
-                            <img src="src/doctor.png" class="Movies_Main_IMG">
-                            <div class="Movies_Selection_Bottom">
-                                <div>
-                                    <ul class="Movies_Selection_Bottom_Title">
-                                        <li><span>Doctor Strange</span></li>
-                                        <li id="Movies_Rating">
-                                            <span>4.8</span>
-                                        </li>
-                                    </ul>
-                                    <ul>
-                                        <li><span>Action,&nbsp;</span></li>
-                                        <li><span>Adventure,&nbsp;</span></li>
-                                        <li><span>Fantasy</span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="Movies_Selection">
-                            <div class="Movies_Selection_Top">
-                                <div>
-                                    <div class="Movies_Selection_Top_Flex">
-                                        <ul>
-                                            <a href="#">
-                                                <div class="Movies_Selection_Top_C">
-                                                    <div class="Movies_Selection_Top_Circle">
-                                                        <div class="Movies_Selection_Top_Triangle">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <li>Watch Now</li>
-                                            <a href="#" class="Movies_Selection_Top_Flex_ViewInfo"><li>View Info</li></a>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div> 
-                            <img src="src/creed.png" class="Movies_Main_IMG">
-                            <div class="Movies_Selection_Bottom">
-                                <div>
-                                    <ul class="Movies_Selection_Bottom_Title">
-                                        <li><span>Assassin’s Creed</span></li>
-                                        <li id="Movies_Rating">
-                                            <span>4.2</span>
-                                        </li>
-                                    </ul>
-                                    <ul>
-                                        <li><span>Action,&nbsp;</span></li>
-                                        <li><span>Adventure,&nbsp;</span></li>
-                                        <li><span>Fantasy</span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="Movies_Selection">
-                            <div class="Movies_Selection_Top">
-                                <div>
-                                    <div class="Movies_Selection_Top_Flex">
-                                        <ul>
-                                            <a href="#">
-                                                <div class="Movies_Selection_Top_C">
-                                                    <div class="Movies_Selection_Top_Circle">
-                                                        <div class="Movies_Selection_Top_Triangle">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <li>Watch Now</li>
-                                            <a href="#" class="Movies_Selection_Top_Flex_ViewInfo"><li>View Info</li></a>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div> 
-                            <img src="src/fantastic_beasts_and.png" class="Movies_Main_IMG">
-                            <div class="Movies_Selection_Bottom">
-                                <div>
-                                    <ul class="Movies_Selection_Bottom_Title">
-                                        <li><span>Fantastic Beasts...</span></li>
-                                        <li id="Movies_Rating">
-                                            <span>4.7</span>
-                                        </li>
-                                    </ul>
-                                    <ul>
-                                        <li><span>Adventure,&nbsp;</span></li>
-                                        <li><span>Family,&nbsp;</span></li>
-                                        <li><span>Fantasy</span></li>
-                                    </ul>
                                 </div>
                             </div>
                         </section>
                     </div>
-                    <div class="Movies_L">
-                        <div class="Movies_Loading">
-                            <div class="Movies_Loading_Circles">
-                                <ul>
-                                    <li class="Movies_Loading_Circles_1">&nbsp;</li>
-                                    <li class="Movies_Loading_Circles_2">&nbsp;</li>
-                                    <li class="Movies_Loading_Circles_1">&nbsp;</li>
-                                </ul>
-                                <span>Loading</span>
+                    <div id="Movie_M_ID_2">
+                        <div class="Movies_M">
+                            <section class="Movies_Selection">
+                                <div class="Movies_Selection_Top">
+                                    <div>
+                                        <div class="Movies_Selection_Top_Flex">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="Movies_Selection_Top_C">
+                                                            <div class="Movies_Selection_Top_Circle">
+                                                                <div class="Movies_Selection_Top_Triangle">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li><h4>Watch Now</h4></li>
+                                                <li><a href="#" class="Movies_Selection_Top_Flex_ViewInfo"><span>View Info</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <img src="src/captain_america.png" alt="" class="Movies_Main_IMG">
+                                <div class="Movies_Selection_Bottom">
+                                    <div>
+                                        <ul class="Movies_Selection_Bottom_Title">
+                                            <li><span>Captain America...</span></li>
+                                            <li class="Movies_Rating">
+                                                <span>4.9</span>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li><span>Action,&nbsp;</span></li>
+                                            <li><span>Adventure,&nbsp;</span></li>
+                                            <li><span>Sci-fi</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="Movies_Selection">
+                                <div class="Movies_Selection_Top">
+                                    <div>
+                                        <div class="Movies_Selection_Top_Flex">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="Movies_Selection_Top_C">
+                                                            <div class="Movies_Selection_Top_Circle">
+                                                                <div class="Movies_Selection_Top_Triangle">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li><h4>Watch Now</h4></li>
+                                                <li><a href="#" class="Movies_Selection_Top_Flex_ViewInfo"><span>View Info</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <img src="src/doctor.png" alt="" class="Movies_Main_IMG">
+                                <div class="Movies_Selection_Bottom">
+                                    <div>
+                                        <ul class="Movies_Selection_Bottom_Title">
+                                            <li><span>Doctor Strange</span></li>
+                                            <li class="Movies_Rating">
+                                                <span>4.8</span>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li><span>Action,&nbsp;</span></li>
+                                            <li><span>Adventure,&nbsp;</span></li>
+                                            <li><span>Fantasy</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="Movies_Selection">
+                                <div class="Movies_Selection_Top">
+                                    <div>
+                                        <div class="Movies_Selection_Top_Flex">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="Movies_Selection_Top_C">
+                                                            <div class="Movies_Selection_Top_Circle">
+                                                                <div class="Movies_Selection_Top_Triangle">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li><h4>Watch Now</h4></li>
+                                                <li><a href="#" class="Movies_Selection_Top_Flex_ViewInfo"><span>View Info</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <img src="src/creed.png" alt="" class="Movies_Main_IMG">
+                                <div class="Movies_Selection_Bottom">
+                                    <div>
+                                        <ul class="Movies_Selection_Bottom_Title">
+                                            <li><span>Assassin’s Creed</span></li>
+                                            <li class="Movies_Rating">
+                                                <span>4.2</span>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li><span>Action,&nbsp;</span></li>
+                                            <li><span>Adventure,&nbsp;</span></li>
+                                            <li><span>Fantasy</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="Movies_Selection">
+                                <div class="Movies_Selection_Top">
+                                    <div>
+                                        <div class="Movies_Selection_Top_Flex">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="Movies_Selection_Top_C">
+                                                            <div class="Movies_Selection_Top_Circle">
+                                                                <div class="Movies_Selection_Top_Triangle">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li><h4>Watch Now</h4></li>
+                                                <li><a href="#" class="Movies_Selection_Top_Flex_ViewInfo"><span>View Info</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <img src="src/fantastic_beasts_and.png" alt="" class="Movies_Main_IMG">
+                                <div class="Movies_Selection_Bottom">
+                                    <div>
+                                        <ul class="Movies_Selection_Bottom_Title">
+                                            <li><span>Fantastic Beasts...</span></li>
+                                            <li class="Movies_Rating">
+                                                <span>4.7</span>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li><span>Adventure,&nbsp;</span></li>
+                                            <li><span>Family,&nbsp;</span></li>
+                                            <li><span>Fantasy</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="Movies_L">
+                            <div class="Movies_Loading">
+                                <div class="Movies_Loading_Circles">
+                                    <ul>
+                                        <li class="Movies_Loading_Circles_1">&nbsp;</li>
+                                        <li class="Movies_Loading_Circles_2">&nbsp;</li>
+                                        <li class="Movies_Loading_Circles_1">&nbsp;</li>
+                                    </ul>
+                                    <span>Loading</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </article>
+        </div>
     </main>
     <footer>
-        <section class="MFooter">
+        <div class="MFooter">
             <div class="container"> 
                 <div class="MFooter_Main">
                     <div id="MFooter_Main_T">
                         <div id="MFooter_Main_Top_id" class="MFooter_Main_Top">
-                            <ul id="MFooter_Main_Top_About_etc_id" class="MFooter_Main_Top_About_etc">
-                                <div class="MFooter_Main_Top_flex">
+                            <div id="MFooter_Main_Top_About_etc_id" class="MFooter_Main_Top_About_etc">
+                                <ul class="MFooter_Main_Top_flex">
                                     <li><a href="#">About</a></li>
                                     <li><a href="#">Terms of Service</a></li>
                                     <li><a href="#">Contact</a></li>
-                                </div>
-                            </ul>
+                                </ul>
+                            </div>
                             <span id="MFooter_Main_Movie_id"><a href="#" id="MFooter_Main_Top_Movie">Movie</a></span>
-                            <ul id="MFooter_Main_Top_Pictures_id" class="MFooter_Main_Top_Pictures">
-                                <div class="MFooter_Main_Top_flex">
-                                    <li><a href="#"><img src="src/Facebook.png" class="MFooter_Main_Top_IMG"></a></li>
-                                    <li><a href="#"><img src="src/Twitter.png" class="MFooter_Main_Top_IMG"></a></li>
-                                    <li><a href="#"><img src="src/Pinterest.png" class="MFooter_Main_Top_IMG"></a></li>
-                                    <li><a href="#"><img src="src/Instagram.png" class="MFooter_Main_Top_IMG"></a></li>
-                                    <li><a href="#"><img src="src/YouTube.png" class="MFooter_Main_Top_IMG"></a></li>
-                                </div>
-                            </ul>
+                            <div id="MFooter_Main_Top_Pictures_id" class="MFooter_Main_Top_Pictures">
+                                <ul class="MFooter_Main_Top_flex">
+                                    <li><a href="#"><img src="src/Facebook.png" alt="" class="MFooter_Main_Top_IMG"></a></li>
+                                    <li><a href="#"><img src="src/Twitter.png" alt="" class="MFooter_Main_Top_IMG"></a></li>
+                                    <li><a href="#"><img src="src/Pinterest.png" alt="" class="MFooter_Main_Top_IMG"></a></li>
+                                    <li><a href="#"><img src="src/Instagram.png" alt="" class="MFooter_Main_Top_IMG"></a></li>
+                                    <li><a href="#"><img src="src/YouTube.png" alt="" class="MFooter_Main_Top_IMG"></a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -798,7 +832,7 @@
                     </div>
                 </div>
             </div>  
-        </section>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>

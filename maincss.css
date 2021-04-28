@@ -27,6 +27,7 @@ header, .mainh {
     height: 100px;
     line-height: 100px;
     font-family: 'Anton', sans-serif;
+    font-weight: 500;
     letter-spacing: 4px;
     text-shadow: 1px 1px 2px black, 0 0 1em black;
 }
@@ -322,6 +323,14 @@ header, .mainh {
     padding: 0px 25px;
 }
 
+#Button_Subscribe h4 {
+    font-weight: 300;
+}
+
+.Movies > h6 {
+    color: white;
+}
+
 @media (max-width:1500px) {
     .container {
         max-width: 1200px;
@@ -347,7 +356,7 @@ header, .mainh {
     .Movies_Inf_Main_Text > span {
         font-size: 26px;
     }
-    #Movies_M_ID {
+    #Movies_M_ID > div,#Movie_M_ID_2 > div {
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 20px;
         grid-row-gap: 20px;
@@ -367,7 +376,7 @@ header, .mainh {
     .Movies_Inf_Main_Text > span{
         font-size: 26px;
     }
-    #Movies_M_ID {
+    #Movies_M_ID > div,#Movie_M_ID_2 > div {
         grid-template-columns: 1fr;
         grid-column-gap: 20px;
         grid-row-gap: 20px;
@@ -706,7 +715,7 @@ body main, body footer{
     font-size: 14px; 
 }
 
-#Movies_Rating span {
+.Movies_Rating span {
     padding: 1px 5px;
     border: 1px solid rgb(0, 203, 237);
     border-radius: 5px;
@@ -741,6 +750,10 @@ body main, body footer{
     align-items: center;
 }
 
+.Movies_Selection_Top_Flex h4 {
+    font-weight: 200;
+}
+
 .Movies_Selection_Top_Flex > ul {
     list-style-type: none;
     margin-top: 20%;
@@ -755,8 +768,16 @@ body main, body footer{
     justify-content: center;
 }
 
+.Movies_Selection_Top_Flex > ul > li:not(:first-of-type){
+    margin-top: 10px;
+}
+
 .Movies_Selection_Top_Flex > ul > li:first-of-type {
     margin-top: 8px;
+}
+
+.Movies_Selection_Top_Flex > ul > li:last-of-type{
+    margin-top: 25px;
 }
 
 .Movies_Selection_Top_Flex_ViewInfo {
@@ -764,7 +785,7 @@ body main, body footer{
     text-decoration: none;
 }
 
-.Movies_Selection_Top_Flex_ViewInfo > li {
+.Movies_Selection_Top_Flex_ViewInfo > span{
     margin-top: 25px;
     border: 1px solid white;
     border-radius: 4px;
@@ -772,7 +793,7 @@ body main, body footer{
     transition-duration: 0.3s;
 }
 
-.Movies_Selection_Top_Flex_ViewInfo:hover li{
+.Movies_Selection_Top_Flex_ViewInfo:hover > span{
     border: 1px solid rgb(0, 203, 237);
     background-color: rgb(0, 203, 237);
 }
