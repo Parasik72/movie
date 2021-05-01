@@ -28,17 +28,37 @@
                 </div>     
             </div>
             <div class="mainimg">
+                <div id="slides">
+                    <div id="mainimg_id">
+                        <img class="main_img" src="src/junglebook.jpeg" alt="">
+                        <img class="main_img" src="src/junglebook3.jpg" alt="">
+                        <img class="main_img" src="src/junglebook4.jpg" alt="">
+                        <img class="main_img" src="src/junglebook5.jpg" alt="">
+                        <img class="main_img" src="src/junglebook2.jpg" alt="">
+                    </div>
+                </div>
                 <nav class="navigation_mainimg">
                     <div class="container">
                         <ul>
-                            <li><a href="#">&nbsp;</a></li>
-                            <li><a href="#">&nbsp;</a></li>
-                            <li><a href="#">&nbsp;</a></li>
-                            <li><a href="#">&nbsp;</a></li>
-                            <li><a href="#">&nbsp;</a></li>
+                            <li><input type="radio" name="slider" id="r1">&nbsp;</input></li>
+                            <li><input checked type="radio" name="slider" id="r2">&nbsp;</input></li>
+                            <li><input type="radio" name="slider" id="r3">&nbsp;</input></li>
+                            <li><input type="radio" name="slider" id="r4">&nbsp;</input></li>
+                            <li><input type="radio" name="slider" id="r5">&nbsp;</input></li>
                         </ul>
                     </div>
                 </nav>
+                <div class="container">
+                    <div id="active">
+                        <ul>
+                            <li><label onclick="slider(0)" for="r1">&nbsp;</label></li>
+                            <li><label onclick="slider(1)" for="r2">&nbsp;</label></li>
+                            <li><label onclick="slider(2)" for="r3">&nbsp;</label></li>
+                            <li><label onclick="slider(3)" for="r4">&nbsp;</label></li>
+                            <li><label onclick="slider(4)" for="r5">&nbsp;</label></li>
+                        </ul>
+                    </div>
+                </div>  
             </div>
             <div class="bottomimg">
                 <div id="bottomimg_id" class="container">

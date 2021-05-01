@@ -45,7 +45,16 @@ const cloneMainSquares = document.getElementById('Movies_Nav_Div_Squares_id').cl
 const cloneMainUlList = document.getElementById('Movies_Nav_Left_id').cloneNode(true);
 const cloneHeaderInfo = document.getElementById('Movie_info_bottom_id').cloneNode(true);
 const cloneMovieinfo = document.getElementById('Movie_info_id').cloneNode(true);
+const images = document.querySelectorAll('#mainimg_id img');
+const mainimgid = document.querySelector('#mainimg_id');
+let widthMainImgID;
 function resizeChange(){
+    widthMainImgID = document.querySelector('#slides').offsetWidth;
+    mainimgid.style.width = widthMainImgID * images.length + 'px';
+    images.forEach(item => {
+        item.style.width = widthMainImgID + 'px';
+        item.style.height = 'auto';
+    })
     let witdh = parseInt(window.innerWidth);
     if(witdh <= 815 && !bflagResizeChange){
         let cloneFooterLeftUl = document.getElementById('MFooter_Main_Top_About_etc_id').cloneNode(true);
@@ -191,6 +200,10 @@ function clickBurger(){
         document.getElementById('Lypa').classList.remove('active');
     }
     bflagBurger = !bflagBurger;
+}
+
+function slider(index){
+    document.getElementById('mainimg_id').style.left = index > 0 ? (index * -100) + '%' : 0;
 }
 
 (function() {
