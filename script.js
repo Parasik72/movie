@@ -206,6 +206,22 @@ function slider(index){
     document.getElementById('mainimg_id').style.left = index > 0 ? (index * -100) + '%' : 0;
 }
 
+function checkedSlider(){
+    for(let i = 1; i <= 5; ++i){
+        let a = document.getElementById('r' + i);
+        let b = document.getElementById('label' + i);
+        if(a.checked){
+            b.style.backgroundColor = 'rgb(0, 203, 237)';
+            b.style.opacity = 1;
+        }
+        else{
+            b.style.backgroundColor = 'white';
+            b.style.opacity = 0.7;
+        }
+    }
+}
+checkedSlider();
+
 (function() {
     window.addEventListener("resize", resizeTrigger);
     var resizeTimeout;

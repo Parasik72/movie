@@ -1085,7 +1085,7 @@ body main, body footer{
     border-radius: 10px;
 }
 
-#active label:hover{
+#active li:hover label{
     opacity: 1;
 }
 
@@ -1100,6 +1100,12 @@ body main, body footer{
 #active {
     position: relative;
     margin-left: 100%;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;   
+    -khtml-user-select: none;    
+    -moz-user-select: none;      
+    -ms-user-select: none;       
+    user-select: none;      
 }
 
 input[name="slider"]{
@@ -1117,6 +1123,10 @@ input[name="slider"]{
 .main_img {
     width: 100%;
     height: 100%;
+}
+
+#active li{
+    width: 4px;
 }
 
 @keyframes Movies_Loading_Circles_Anim {
