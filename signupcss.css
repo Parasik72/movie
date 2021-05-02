@@ -245,6 +245,18 @@
     transform: scale(1.1);
 }
 
+#MFooter_Main_Top_About_etc_id, 
+#MFooter_Main_Top_Pictures_id,
+#MFooter_Main_Top_About_etc_id_End ul,
+#MFooter_Main_Top_Pictures_id_End ul{
+    list-style: none;
+}
+
+#MFooter_Main_Top_About_etc_id_End,
+#MFooter_Main_Top_Pictures_id_End{
+    display: none;
+}
+
 @media (max-width:1500px) {
     .container {
         max-width: 1200px;
@@ -322,6 +334,14 @@
     }
     .MFooter{
         height: 230px;
+    }
+    #MFooter_Main_Top_About_etc_id,
+    #MFooter_Main_Top_Pictures_id{
+        display: none;
+    }
+    #MFooter_Main_Top_About_etc_id_End,
+    #MFooter_Main_Top_Pictures_id_End{
+        display: block;
     }
 }
 

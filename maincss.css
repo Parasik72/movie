@@ -311,6 +311,12 @@ header, .mainh {
     font-weight: 300;
 }
 
+#Header_Bottom_More,
+#MFooter_Main_Top_About_etc_id_End,
+#MFooter_Main_Top_Pictures_id_End{
+    display: none;
+}
+
 .Movies > h6 {
     color: white;
 }
@@ -489,8 +495,18 @@ header, .mainh {
     #searchFieldLi.active{
         padding: 6px 22px;
     }
+    #Movie_info_id,
+    #Movie_info_bottom_id,
+    #MFooter_Main_Top_About_etc_id,
+    #MFooter_Main_Top_Pictures_id{
+        display: none;
+    }
+    #Header_Bottom_More,
+    #MFooter_Main_Top_About_etc_id_End,
+    #MFooter_Main_Top_Pictures_id_End{
+        display: block !important;
+    }
 }
-
 @media (max-width:400px) {
     #Movies_Inf_Main_IMG_Top {
         position: relative;
@@ -1011,7 +1027,10 @@ body main, body footer{
     margin-right: 10px;
 }
 
-#MFooter_Main_Top_About_etc_id, #MFooter_Main_Top_Pictures_id{
+#MFooter_Main_Top_About_etc_id, 
+#MFooter_Main_Top_Pictures_id,
+#MFooter_Main_Top_About_etc_id_End ul,
+#MFooter_Main_Top_Pictures_id_End ul{
     list-style: none;
 }
 
@@ -1097,15 +1116,18 @@ body main, body footer{
     list-style: none;
 }
 
-#active {
-    position: relative;
-    margin-left: 100%;
+#navigation_mainimg, #active {
     -webkit-touch-callout: none; 
     -webkit-user-select: none;   
     -khtml-user-select: none;    
     -moz-user-select: none;      
     -ms-user-select: none;       
-    user-select: none;      
+    user-select: none;
+}
+
+#active {
+    position: relative;
+    margin-left: 100%;   
 }
 
 input[name="slider"]{

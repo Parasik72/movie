@@ -43,8 +43,6 @@ function getMainULList(){
 let bflagResizeChange = false;
 const cloneMainSquares = document.getElementById('Movies_Nav_Div_Squares_id').cloneNode(true);
 const cloneMainUlList = document.getElementById('Movies_Nav_Left_id').cloneNode(true);
-const cloneHeaderInfo = document.getElementById('Movie_info_bottom_id').cloneNode(true);
-const cloneMovieinfo = document.getElementById('Movie_info_id').cloneNode(true);
 const images = document.querySelectorAll('#mainimg_id img');
 const mainimgid = document.querySelector('#mainimg_id');
 let widthMainImgID;
@@ -57,8 +55,6 @@ function resizeChange(){
     })
     let witdh = parseInt(window.innerWidth);
     if(witdh <= 815 && !bflagResizeChange){
-        let cloneFooterLeftUl = document.getElementById('MFooter_Main_Top_About_etc_id').cloneNode(true);
-        let cloneFooterRightUl = document.getElementById('MFooter_Main_Top_Pictures_id').cloneNode(true);
         if(bflagSearchField){
             let cloneSearchField = document.getElementById('searchFieldLi').cloneNode(true);
             document.getElementById('searchFieldLi').remove();
@@ -67,27 +63,11 @@ function resizeChange(){
                 cloneSearchField
             );
         }
-        document.getElementById('MFooter_Main_Top_About_etc_id').remove();
-        document.getElementById('MFooter_Main_Top_Pictures_id').remove();
         document.getElementById('Movies_Nav_Div_Squares_id').remove();
         document.getElementById('Movies_Nav_Left_id').remove();
-        document.getElementById('Movie_info_bottom_id').remove();
-        document.getElementById('Movie_info_id').remove();
-        document.getElementById('MFooter_Main_T').insertAdjacentElement(
-            'beforeend',
-            cloneFooterLeftUl
-        );
-        document.getElementById('MFooter_Main_T').insertAdjacentElement(
-            'beforeend',
-            cloneFooterRightUl
-        );
         document.getElementById('Movies_Nav_id').insertAdjacentHTML(
             'afterbegin',
             getMainULList()
-        );
-        document.getElementById('Header_Bottom_Info').insertAdjacentHTML(
-            'afterbegin',
-            '<button id="Header_Bottom_More" type="submit">More</button>'
         );
         bflagResizeChange = true;
         if(!document.getElementById('Lypa').classList.contains('active')){
@@ -96,8 +76,6 @@ function resizeChange(){
                 document.getElementById('searchFieldLi').classList.add('active');
         }  
     }else if(witdh > 815 && bflagResizeChange){
-        let cloneFooterLeftUl = document.getElementById('MFooter_Main_Top_About_etc_id').cloneNode(true);
-        let cloneFooterRightUl = document.getElementById('MFooter_Main_Top_Pictures_id').cloneNode(true);
         if(bflagSearchField){
             let cloneSearchField = document.getElementById('searchFieldLi').cloneNode(true);
             document.getElementById('searchFieldLi').remove();
@@ -106,22 +84,11 @@ function resizeChange(){
                 cloneSearchField
             );
         }
-        document.getElementById('MFooter_Main_Top_About_etc_id').remove();
-        document.getElementById('MFooter_Main_Top_Pictures_id').remove();
         document.getElementById('selectMainULList').remove();
-        document.getElementById('Header_Bottom_More').remove();
         if(bflagCheckMainUlList){
             document.getElementById('selectGenreList').remove();
             bflagCheckMainUlList = false;
         }
-        document.getElementById('MFooter_Main_Top_id').insertAdjacentElement(
-            'afterbegin',
-            cloneFooterLeftUl
-        );
-        document.getElementById('MFooter_Main_Top_id').insertAdjacentElement(
-            'beforeend',
-            cloneFooterRightUl
-        );
         document.getElementById('Movies_Nav_id').insertAdjacentElement(
             'beforeend',
             cloneMainSquares
@@ -129,14 +96,6 @@ function resizeChange(){
         document.getElementById('Movies_Nav_id').insertAdjacentElement(
             'afterbegin',
             cloneMainUlList
-        );
-        document.getElementById('Header_Bottom_Info').insertAdjacentElement(
-            'afterbegin',
-            cloneHeaderInfo
-        );
-        document.getElementById('bottomimg_id').insertAdjacentElement(
-            'beforeend',
-            cloneMovieinfo
         );
         bflagResizeChange = false;
         if(document.getElementById('Lypa').classList.contains('active')){
