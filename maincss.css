@@ -1365,7 +1365,6 @@ body main, body footer{
 }
 
 input[name="slider"]{
-    position: aboslute;
     visibility: hidden;
 }
 
