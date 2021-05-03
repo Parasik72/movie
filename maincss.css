@@ -589,6 +589,7 @@ header, .mainh {
         right: 25px;
         width: 30px;
         height: 25px;
+        cursor: pointer;
     }
     #Movie_info_Button_Close::after,
     #Movie_info_Button_Close::before{
@@ -606,6 +607,9 @@ header, .mainh {
     }
     #Movie_info_Button_Close::after{
         transform: rotate(-45deg);
+    }
+    #Movie_info_id a:hover{
+        border: none;
     }
     #Movie_info_id ul li a ,
     #Movie_info_id ul li{
@@ -1135,6 +1139,7 @@ body main, body footer{
     display: flex;
     align-items: center;
     position: relative;
+    z-index: 2;
 }
 
 .Movies_Inf_Main_IMG_B {
