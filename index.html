@@ -59,7 +59,7 @@
                     </div>
                 </div>  
             </div>
-            <div class="bottomimg">
+            <div id="bottomIMG_id" class="bottomimg">
                 <div id="bottomimg_id" class="container">
                     <span id="Movie_title">THE JUNGLE BOOK</span>
                     <div id="Movie_info_id" class="Movie_info">
@@ -68,13 +68,36 @@
                             <li><a href="#">Drama</a></li>
                             <li><a href="#">Family</a></li>
                             <li><a href="#">Fantasy</a></li>
-                            <li>|</li>
+                            <li id="Movie_info_Stick">|</li>
                             <li>1h 46m</li>
+                            <li onclick="clickMore()" id="Movie_info_Button_Close"></li>
+                        </ul>
+                        <ul>
+                            <li><img src="src/Star.png" alt="" class="img_star"></li>
+                            <li><img src="src/Star.png" alt="" class="img_star"></li>
+                            <li><img src="src/Star.png" alt="" class="img_star"></li>
+                            <li><img src="src/Star.png" alt="" class="img_star"></li>
+                            <li><img src="src/Star.png" alt="" class="img_star"></li>
+                            <li>4.8</li>
+                        </ul>
+                        <ul>
+                            <li><a href="https://www.kinopoisk.ru/film/779024/" class="Watch_Now" target = "_blank">Watch Now</a></li>
+                            <li><a href="#" class="View_Info">View Info</a></li>
+                            <li><a href="#" class="Favorites">+ Favorites</a></li>
+                            <li>
+                                <a href="#">
+                                    <ul class="Movie_info_Buttons_Circles">
+                                        <li>&nbsp;</li>
+                                        <li>&nbsp;</li>
+                                        <li>&nbsp;</li>
+                                    </ul>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
                 <div id="Header_Bottom_Info" class="container">
-                    <button id="Header_Bottom_More" type="submit">More</button>
+                    <button onclick="clickMore()" id="Header_Bottom_More" type="submit">More</button>
                     <div id="Movie_info_bottom_id" class="Movie_info_bottom">
                         <div class="Movie_info_Star">
                             <ul>

@@ -143,6 +143,12 @@ function checkMainULList(){
     }
 }
 
+let bflagMore = true;
+function clickMore(){
+    bflagMore ? document.getElementById('Movie_info_id').classList.add('active') : document.getElementById('Movie_info_id').classList.remove('active');
+    bflagMore = !bflagMore;
+}
+
 let bflagBurger = true;
 function clickBurger(){
     if(bflagBurger){
@@ -151,12 +157,14 @@ function clickBurger(){
         if(bflagSearchField)
             document.getElementById('searchFieldLi').classList.add('active');
         document.getElementById('Lypa').classList.add('active');
+        document.getElementById('bottomIMG_id').style.zIndex = 0;
     }else{
         document.getElementById('header_burger_id').classList.remove('active');
         document.getElementById('navigation_topimg_id').classList.remove('active');
         if(bflagSearchField)
             document.getElementById('searchFieldLi').classList.remove('active');
         document.getElementById('Lypa').classList.remove('active');
+        setTimeout(() => document.getElementById('bottomIMG_id').style.zIndex = 3, 300);
     }
     bflagBurger = !bflagBurger;
 }
