@@ -189,6 +189,7 @@ header, .mainh {
     padding: 6px 12px;
     border-radius: 4px;
     transition-duration: 0.3s;
+    color: white;
 }
 
 .Favorites:hover {
@@ -603,7 +604,6 @@ header, .mainh {
     z-index: 1;
 }
 
-
 main {
     background: rgb(238, 238, 238);
 }
@@ -747,17 +747,165 @@ body main, body footer{
     position: relative;
 }
 
+.Movies_Selection.active .Movies_Selection_Bottom{
+    background: none;
+    bottom: 100%;
+}
+
+.Movies_Selection.active .Movies_Main_IMG{
+    height: 100%;
+}
+
+.Movies_Selection.active .Movies_Selection_Top{
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 100%;
+    height: 100%;
+}
+
+.Movies_Selection.active .Movies_Selection_Top_Flex{
+    display: none;
+}
+
+.Movies_Selection .Movies_Selection_Bottom_Up,
+.Movies_Selection .Movies_Selection_Bottom_Down{
+    display: none;
+}
+
+.Movies_Selection.active .Movies_Selection_Bottom_Up,
+.Movies_Selection.active .Movies_Selection_Bottom_Down{
+    display: block;
+}
+
+.Movies_Selection.active .Movies_Selection_Bottom_Title li:first-of-type{
+    color: white;
+}
+
 .Movies_Selection_Bottom {
     height: 25%;
     width: 100%;
     background-color: white;
     position: relative;
-    bottom: 25px;
+    bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 0px 0px 5px 5px;
     z-index: 2;
+}
+
+.Movies_Selection_Bottom_Up{
+    position: relative;
+    bottom: 100%;
+    color: white;
+    height: 15%;
+    width: 100%;
+    z-index: 1;
+}
+
+.Movies_Selection_Bottom_Up ul{
+    list-style: none;
+}
+
+.Movies_Selection_Bottom_Up a{
+    text-decoration: none;
+}
+
+.Movies_Selection_Bottom_Up > div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+}
+
+.Movies_Selection_Bottom_Up_Center{
+    width: 80%;
+    height: 50%;
+}
+
+.Movies_Selection_Bottom_Up_Center > div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.Movies_Selection_Bottom_Up_Center > div > div > ul > li{
+    display: inline-block;
+    height: 100%;
+}
+
+.Movies_Selection_Bottom_Up_Center > div > div > ul > li a {
+    text-align: center;
+}
+
+.Movies_Selection_Bottom_Up_Center .Favorites {
+    position: relative;
+    bottom: 15px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.Movies_Selection_Bottom_Up_Close{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.Movies_Selection_Bottom_Up_Close_Button{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+.Movies_Selection_Bottom_Up_Close_Button::after,
+.Movies_Selection_Bottom_Up_Close_Button::before{
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.Movies_Selection_Bottom_Up_Close_Button::before{
+    top: 10px;
+    transform: rotate(45deg);
+}
+
+.Movies_Selection_Bottom_Up_Close_Button::after{
+    transform: rotate(-45deg);
+}
+
+.Movies_Selection_Bottom_Down {
+    position: relative;
+    bottom: 100%;
+    width: 100%;
+    height: 40%;
+    z-index: 3;
+    color: rgb(224, 224, 224);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.Movies_Selection_Bottom_Down > div {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.Movies_Selection_Bottom_Down_Center{
+    height: 80%;
+    width: 80%;
+}
+
+.Movies_Selection_Bottom_Down_Watch_Now{
+    margin-top: 35px;
+}
+
+.Movies_Selection_Bottom_Down_Watch_Now a{
+    text-decoration: none;
 }
 
 .Movies_Selection_Bottom > div {
@@ -806,7 +954,7 @@ body main, body footer{
 .Movies_Selection_Top {
     background: rgba(0, 0, 0, 0);
     width: 100%;
-    height: 75%;
+    height: 76%;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -861,6 +1009,12 @@ body main, body footer{
 .Movies_Selection_Top_Flex_ViewInfo {
     color: white;
     text-decoration: none;
+    background: none;
+    border: none;
+}
+
+.Movies_Selection_Top_Flex_ViewInfo:focus{
+    outline: none;
 }
 
 .Movies_Selection_Top_Flex_ViewInfo > span{
@@ -869,6 +1023,8 @@ body main, body footer{
     border-radius: 4px;
     padding: 4px 15px; 
     transition-duration: 0.3s;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
 }
 
 .Movies_Selection_Top_Flex_ViewInfo:hover > span{

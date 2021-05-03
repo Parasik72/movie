@@ -169,6 +169,10 @@ function clickBurger(){
     bflagBurger = !bflagBurger;
 }
 
+function clickViewInfo(string){
+    document.getElementById(string).classList.contains('active') ? document.getElementById(string).classList.remove('active') : document.getElementById(string).classList.add('active');
+}
+
 function slider(index){
     document.getElementById('mainimg_id').style.left = index > 0 ? (index * -100) + '%' : 0;
 }
