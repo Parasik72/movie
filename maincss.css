@@ -532,8 +532,8 @@ header, .mainh {
     #Movie_info_id ul {
         position: relative;
         z-index: inherit;
-        margin-top: 20px;
-        margin-left: 20px;
+        margin-top: 25px;
+        margin-left: 50px;
         list-style: none;
     }
     #Movie_info_id.active{
@@ -543,16 +543,50 @@ header, .mainh {
     #Movie_info_id ul:last-of-type li{
         display: list-item;
     }
-    #Movie_info_id > ul > li:not(:first-of-type) {
-        margin-top: 10px;
+    #Movie_info_id > ul:first-of-type > li:not(:first-of-type) {
+        margin-top: 5px;
     }
     #Movie_info_id > ul > li:last-of-type{
+        margin-left: 0;
+    }
+    #Movie_info_id > ul:first-of-type > li:not(:last-of-type){
+        border-bottom: 1px solid white;
+        width: 100px;
+    }
+    #Movie_info_id > ul:last-of-type > li:last-of-type{
         margin: 0;
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        border-radius: 10px;
+    }
+    #Movie_info_Buttons_Circles_ID{
+        width: 100%;
+        height: 100%;
+    }
+    #Movie_info_Buttons_Circles_ID li{
+        background: rgb(0, 203, 237);
+        position: relative;
+        left: 17px;
+        top: 10px;
+    }
+    #Movie_info_id > ul:last-of-type li:last-of-type{
+        cursor: pointer;
+    }
+    #Movie_info_id > ul:last-of-type > li:not(:first-of-type){
+        margin-top: 15px;
+    }
+    #Movie_info_Ref{
+        width: 100px;
+        height: 100px;
+    }
+    #Movie_info_id > ul:last-of-type li:last-of-type:hover li{
+        background-color: rgb(0, 203, 237) !important;
     }
     #Movie_info_Button_Close{
         position: absolute;
         top: 10px;
-        right: 20px;
+        right: 25px;
         width: 30px;
         height: 25px;
     }
@@ -584,6 +618,24 @@ header, .mainh {
     }
     .Movie_info_Buttons_Circles:hover li{
         background-color: white;
+    }
+    #Movie_info_Stick{
+        display: none !important;
+    }
+    #Movie_info_id ul:nth-child(2) li:last-of-type{
+        border: 1px solid white;
+        padding: 0 7px;
+        border-radius: 4px;
+        position: relative;
+        bottom: 4px;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+    #Movie_info_id > ul:nth-child(2){
+        border-bottom: 1px solid white;
+        width: 200px;
+    }
+    #Movie_info_id .Favorites{
+        border: 1px solid white
     }
 }
 @media (max-width:400px) {
@@ -1072,6 +1124,7 @@ body main, body footer{
     justify-content: center;
     object-fit:cover;
     object-position: bottom;
+    transition-duration: 0.3s;
 }
 
 .Movies_Inf {

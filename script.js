@@ -158,13 +158,14 @@ function clickBurger(){
             document.getElementById('searchFieldLi').classList.add('active');
         document.getElementById('Lypa').classList.add('active');
         document.getElementById('bottomIMG_id').style.zIndex = 0;
+        setTimeout(() => document.getElementById('bottomIMG_id').style.zIndex = 0, 150);
     }else{
         document.getElementById('header_burger_id').classList.remove('active');
         document.getElementById('navigation_topimg_id').classList.remove('active');
         if(bflagSearchField)
             document.getElementById('searchFieldLi').classList.remove('active');
         document.getElementById('Lypa').classList.remove('active');
-        setTimeout(() => document.getElementById('bottomIMG_id').style.zIndex = 3, 300);
+        setTimeout(() => document.getElementById('bottomIMG_id').style.zIndex = 3, 150);
     }
     bflagBurger = !bflagBurger;
 }
