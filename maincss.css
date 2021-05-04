@@ -113,7 +113,7 @@ header, .mainh {
     text-shadow: 1px 1px 2px black, 0 0 1em black;
 }
 
-.Movie_info li {
+.Movie_info li{
     display: inline-block;
     color: rgb(224, 224, 224);
     font-family: 'Roboto', sans-serif;
@@ -315,7 +315,8 @@ header, .mainh {
 #Header_Bottom_More,
 #MFooter_Main_Top_About_etc_id_End,
 #MFooter_Main_Top_Pictures_id_End,
-#Movie_info_id ul:not(:first-of-type){
+#Movie_info_id ul:not(:first-of-type),
+#Movie_info_Stars_ID{
     display: none;
 }
 
@@ -329,6 +330,10 @@ header, .mainh {
 
 .Movies > h6 {
     color: white;
+}
+
+#Movie_info_id ul{
+    padding: 0;
 }
 
 @media (max-width:1500px) {
@@ -371,7 +376,7 @@ header, .mainh {
 
 @media (max-width:815px) {
     .container {
-        max-width: none;
+        max-width: 460px;
     }
     .Movies_Inf_Main_Text > span{
         font-size: 26px;
@@ -478,7 +483,6 @@ header, .mainh {
         background-color: rgb(0, 203, 237);
         z-index: 3;
         padding-top: 20px;
-        padding-left: 25px;
         transition-duration: 0.3s;
     }
     #navigation_topimg_id.active{
@@ -516,7 +520,8 @@ header, .mainh {
     #MFooter_Main_Top_About_etc_id_End,
     #MFooter_Main_Top_Pictures_id_End,
     #Movie_info_id ul,
-    #Movie_info_Button_Close{
+    #Movie_info_Button_Close,
+    #Movie_info_Stars_ID{
         display: block !important;
     }
     #Movie_info_id{
@@ -527,20 +532,24 @@ header, .mainh {
         height: 100%;
         z-index: 3;
         margin: 0;
-        transition-duration: 0.3s;
+        transition-duration: 0.3s;   
     }
     #Movie_info_id ul {
         position: relative;
         z-index: inherit;
         margin-top: 25px;
-        margin-left: 50px;
         list-style: none;
+        
+    }
+    #Movie_info_id > ul{
+        padding-left: 25px;
+        padding-right: 25px;
     }
     #Movie_info_id.active{
         top:0;
     }
-    #Movie_info_id ul:first-of-type li, 
-    #Movie_info_id ul:last-of-type li{
+    #Movie_info_id > ul:first-of-type li, 
+    #Movie_info_id > ul:last-of-type li{
         display: list-item;
     }
     #Movie_info_id > ul:first-of-type > li:not(:first-of-type) {
@@ -626,7 +635,7 @@ header, .mainh {
     #Movie_info_Stick{
         display: none !important;
     }
-    #Movie_info_id ul:nth-child(2) li:last-of-type{
+    #Movie_info_id > div > ul li:last-of-type{
         border: 1px solid white;
         padding: 0 7px;
         border-radius: 4px;
@@ -634,15 +643,14 @@ header, .mainh {
         bottom: 4px;
         font-family: 'Nunito Sans', sans-serif;
     }
-    #Movie_info_id > ul:nth-child(2){
-        border-bottom: 1px solid white;
-        width: 200px;
-    }
     #Movie_info_id .Favorites{
         border: 1px solid white
     }
 }
 @media (max-width:400px) {
+    .container {
+        max-width: none;
+    }
     #Movies_Inf_Main_IMG_Top {
         position: relative;
         margin-bottom: 50%;
@@ -1067,6 +1075,7 @@ body main, body footer{
     text-decoration: none;
     background: none;
     border: none;
+    cursor: pointer;
 }
 
 .Movies_Selection_Top_Flex_ViewInfo:focus{
