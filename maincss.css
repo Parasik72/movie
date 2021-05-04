@@ -629,7 +629,7 @@ header, .mainh {
         border: 1px solid white;
         color: rgb(0, 203, 237);
     }
-    .Movie_info_Buttons_Circles:hover li{
+    #Movie_info_Ref .Movie_info_Buttons_Circles:hover li{
         background-color: white;
     }
     #Movie_info_Stick{
